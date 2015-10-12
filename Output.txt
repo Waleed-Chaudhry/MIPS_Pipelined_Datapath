@@ -1,0 +1,538 @@
+Clock Cycle           1 
+
+IF/ID Write
+Inst = a1020000 
+
+IF/ID Read
+Inst = xxxxxxxx 
+
+ID/EX Write
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 0, MemWrite = 1
+Branch = 0, MemToReg = 0, regWrite = 0 
+
+ReadReg1Value = xxxxxxxx, ReadReg2Value = xxxxxxxx, SEOffset = xxxxxxxx
+WriteReg_20_16 =  x, WriteReg_15_11 =  x, Function = xx 
+
+ID/EX Read
+Control: RegDst = x, ALUSrc = x, ALUOp = xx, MemRead = x, MemWrite = x
+Branch = x, MemToReg = x, RegWrite = x 
+
+ReadReg1Value = xxxxxxxx, ReadReg2Value = xxxxxxxx, SEOffset = xxxxxxxx
+WriteReg_20_16 =  x, WriteReg_15_11 =  x, Function = xx 
+
+EX/MEM Write
+Control: MemRead = x, MemWrite = x, Branch = x, MemToReg = x, RegWrite x
+SWB = xx, WriteRegNum =  x, ALUResult = xxxxxxxx 
+
+EX/MEM Read
+Control: MemRead = x, MemWrite = x, Branch = x, MemToReg = x, RegWrite x
+SWB = xx, WriteRegNum =  x, ALUResult = xxxxxxxx 
+
+MEM/WB Write
+Control: = MemToReg = x, RegWrite = x
+LWB = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+MEM/WB Read
+Control: = MemToReg = x, RegWrite = x
+LVDataValue = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000103, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 0000010a, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           2 
+
+IF/ID Write
+Inst = 810afffc 
+
+IF/ID Read
+Inst = a1020000 
+
+ID/EX Write
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 0, MemWrite = 1
+Branch = 0, MemToReg = 0, regWrite = 0 
+
+ReadReg1Value = 00000108, ReadReg2Value = 00000102, SEOffset = 00000000
+WriteReg_20_16 =  2, WriteReg_15_11 =  0, Function = 00 
+
+ID/EX Read
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 0, MemWrite = 1
+Branch = 0, MemToReg = 0, RegWrite = 0 
+
+ReadReg1Value = xxxxxxxx, ReadReg2Value = xxxxxxxx, SEOffset = xxxxxxxx
+WriteReg_20_16 =  x, WriteReg_15_11 =  x, Function = xx 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 1, Branch = 0, MemToReg = 0, RegWrite 0
+SWB = xx, WriteRegNum =  x, ALUResult = xxxxxxxx 
+
+EX/MEM Read
+Control: MemRead = x, MemWrite = x, Branch = x, MemToReg = x, RegWrite x
+SWB = xx, WriteRegNum =  x, ALUResult = xxxxxxxx 
+
+MEM/WB Write
+Control: = MemToReg = x, RegWrite = x
+LWB = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+MEM/WB Read
+Control: = MemToReg = x, RegWrite = x
+LVDataValue = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000103, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 0000010a, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           3 
+
+IF/ID Write
+Inst = 00831820 
+
+IF/ID Read
+Inst = 810afffc 
+
+ID/EX Write
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 1, MemWrite = 0
+Branch = 0, MemToReg = 1, regWrite = 1 
+
+ReadReg1Value = 00000108, ReadReg2Value = 0000010a, SEOffset = fffffffc
+WriteReg_20_16 = 10, WriteReg_15_11 = 31, Function = 3c 
+
+ID/EX Read
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 0, MemWrite = 1
+Branch = 0, MemToReg = 0, RegWrite = 0 
+
+ReadReg1Value = 00000108, ReadReg2Value = 00000102, SEOffset = 00000000
+WriteReg_20_16 =  2, WriteReg_15_11 =  0, Function = 00 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 1, Branch = 0, MemToReg = 0, RegWrite 0
+SWB = 02, WriteRegNum =  2, ALUResult = 00000108 
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 1, Branch = 0, MemToReg = 0, RegWrite 0
+SWB = xx, WriteRegNum =  x, ALUResult = xxxxxxxx 
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 0
+LWB = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+MEM/WB Read
+Control: = MemToReg = x, RegWrite = x
+LVDataValue = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000103, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 0000010a, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           4 
+
+IF/ID Write
+Inst = 01263820 
+
+IF/ID Read
+Inst = 00831820 
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1 
+
+ReadReg1Value = 00000104, ReadReg2Value = 00000103, SEOffset = 00001820
+WriteReg_20_16 =  3, WriteReg_15_11 =  3, Function = 20 
+
+ID/EX Read
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 1, MemWrite = 0
+Branch = 0, MemToReg = 1, RegWrite = 1 
+
+ReadReg1Value = 00000108, ReadReg2Value = 0000010a, SEOffset = fffffffc
+WriteReg_20_16 = 10, WriteReg_15_11 = 31, Function = 3c 
+
+EX/MEM Write
+Control: MemRead = 1, MemWrite = 0, Branch = 0, MemToReg = 1, RegWrite 1
+SWB = 0a, WriteRegNum = 10, ALUResult = 00000104 
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 1, Branch = 0, MemToReg = 0, RegWrite 0
+SWB = 02, WriteRegNum =  2, ALUResult = 00000108 
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 0
+LWB = xx, ALUResult = 00000108, WriteRegNum =  2 
+
+MEM/WB Read
+Control: = MemToReg = 0, RegWrite = 0
+LVDataValue = xx, ALUResult = xxxxxxxx, WriteRegNum =  x 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000103, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 0000010a, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           5 
+
+IF/ID Write
+Inst = 01224820 
+
+IF/ID Read
+Inst = 01263820 
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1 
+
+ReadReg1Value = 00000109, ReadReg2Value = 00000106, SEOffset = 00003820
+WriteReg_20_16 =  6, WriteReg_15_11 =  7, Function = 20 
+
+ID/EX Read
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, RegWrite = 1 
+
+ReadReg1Value = 00000104, ReadReg2Value = 00000103, SEOffset = 00001820
+WriteReg_20_16 =  3, WriteReg_15_11 =  3, Function = 20 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 03, WriteRegNum =  3, ALUResult = 00000207 
+
+EX/MEM Read
+Control: MemRead = 1, MemWrite = 0, Branch = 0, MemToReg = 1, RegWrite 1
+SWB = 0a, WriteRegNum = 10, ALUResult = 00000104 
+
+MEM/WB Write
+Control: = MemToReg = 1, RegWrite = 1
+LWB = 04, ALUResult = 00000104, WriteRegNum = 10 
+
+MEM/WB Read
+Control: = MemToReg = 0, RegWrite = 0
+LVDataValue = xx, ALUResult = 00000108, WriteRegNum =  2 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000103, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 0000010a, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           6 
+
+IF/ID Write
+Inst = 81180000 
+
+IF/ID Read
+Inst = 01224820 
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1 
+
+ReadReg1Value = 00000109, ReadReg2Value = 00000102, SEOffset = 00004820
+WriteReg_20_16 =  2, WriteReg_15_11 =  9, Function = 20 
+
+ID/EX Read
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, RegWrite = 1 
+
+ReadReg1Value = 00000109, ReadReg2Value = 00000106, SEOffset = 00003820
+WriteReg_20_16 =  6, WriteReg_15_11 =  7, Function = 20 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 06, WriteRegNum =  7, ALUResult = 0000020f 
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 03, WriteRegNum =  3, ALUResult = 00000207 
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 1
+LWB = 04, ALUResult = 00000207, WriteRegNum =  3 
+
+MEM/WB Read
+Control: = MemToReg = 1, RegWrite = 1
+LVDataValue = 04, ALUResult = 00000104, WriteRegNum = 10 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000103, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           7 
+
+IF/ID Write
+Inst = 81510010 
+
+IF/ID Read
+Inst = 81180000 
+
+ID/EX Write
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 1, MemWrite = 0
+Branch = 0, MemToReg = 1, regWrite = 1 
+
+ReadReg1Value = 00000108, ReadReg2Value = 00000118, SEOffset = 00000000
+WriteReg_20_16 = 24, WriteReg_15_11 =  0, Function = 00 
+
+ID/EX Read
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, RegWrite = 1 
+
+ReadReg1Value = 00000109, ReadReg2Value = 00000102, SEOffset = 00004820
+WriteReg_20_16 =  2, WriteReg_15_11 =  9, Function = 20 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 02, WriteRegNum =  9, ALUResult = 0000020b 
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 06, WriteRegNum =  7, ALUResult = 0000020f 
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 1
+LWB = 04, ALUResult = 0000020f, WriteRegNum =  7 
+
+MEM/WB Read
+Control: = MemToReg = 0, RegWrite = 1
+LVDataValue = 04, ALUResult = 00000207, WriteRegNum =  3 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000207, 00000104, 00000105, 00000106, 00000107 
+00000108, 00000109, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           8 
+
+IF/ID Write
+Inst = 00624022 
+
+IF/ID Read
+Inst = 81510010 
+
+ID/EX Write
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 1, MemWrite = 0
+Branch = 0, MemToReg = 1, regWrite = 1 
+
+ReadReg1Value = 00000004, ReadReg2Value = 00000111, SEOffset = 00000010
+WriteReg_20_16 = 17, WriteReg_15_11 =  0, Function = 10 
+
+ID/EX Read
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 1, MemWrite = 0
+Branch = 0, MemToReg = 1, RegWrite = 1 
+
+ReadReg1Value = 00000108, ReadReg2Value = 00000118, SEOffset = 00000000
+WriteReg_20_16 = 24, WriteReg_15_11 =  0, Function = 00 
+
+EX/MEM Write
+Control: MemRead = 1, MemWrite = 0, Branch = 0, MemToReg = 1, RegWrite 1
+SWB = 18, WriteRegNum = 24, ALUResult = 00000108 
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 02, WriteRegNum =  9, ALUResult = 0000020b 
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 1
+LWB = 04, ALUResult = 0000020b, WriteRegNum =  9 
+
+MEM/WB Read
+Control: = MemToReg = 0, RegWrite = 1
+LVDataValue = 04, ALUResult = 0000020f, WriteRegNum =  7 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000207, 00000104, 00000105, 00000106, 0000020f 
+00000108, 00000109, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle           9 
+
+IF/ID Write
+Inst = 00000000 
+
+IF/ID Read
+Inst = 00624022 
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1 
+
+ReadReg1Value = 00000207, ReadReg2Value = 00000102, SEOffset = 00004022
+WriteReg_20_16 =  2, WriteReg_15_11 =  8, Function = 22 
+
+ID/EX Read
+Control: RegDst = 0, ALUSrc = 1, ALUOp = 00, MemRead = 1, MemWrite = 0
+Branch = 0, MemToReg = 1, RegWrite = 1 
+
+ReadReg1Value = 00000004, ReadReg2Value = 00000111, SEOffset = 00000010
+WriteReg_20_16 = 17, WriteReg_15_11 =  0, Function = 10 
+
+EX/MEM Write
+Control: MemRead = 1, MemWrite = 0, Branch = 0, MemToReg = 1, RegWrite 1
+SWB = 11, WriteRegNum = 17, ALUResult = 00000014 
+
+EX/MEM Read
+Control: MemRead = 1, MemWrite = 0, Branch = 0, MemToReg = 1, RegWrite 1
+SWB = 18, WriteRegNum = 24, ALUResult = 00000108 
+
+MEM/WB Write
+Control: = MemToReg = 1, RegWrite = 1
+LWB = 02, ALUResult = 00000108, WriteRegNum = 24 
+
+MEM/WB Read
+Control: = MemToReg = 0, RegWrite = 1
+LVDataValue = 04, ALUResult = 0000020b, WriteRegNum =  9 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000207, 00000104, 00000105, 00000106, 0000020f 
+00000108, 0000020b, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000118, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle          10 
+
+IF/ID Write
+Inst = 00000000 
+
+IF/ID Read
+Inst = 00000000 
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1 
+
+ReadReg1Value = 00000000, ReadReg2Value = 00000000, SEOffset = 00000000
+WriteReg_20_16 =  0, WriteReg_15_11 =  0, Function = 00 
+
+ID/EX Read
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, RegWrite = 1 
+
+ReadReg1Value = 00000207, ReadReg2Value = 00000102, SEOffset = 00004022
+WriteReg_20_16 =  2, WriteReg_15_11 =  8, Function = 22 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 02, WriteRegNum =  8, ALUResult = 00000105 
+
+EX/MEM Read
+Control: MemRead = 1, MemWrite = 0, Branch = 0, MemToReg = 1, RegWrite 1
+SWB = 11, WriteRegNum = 17, ALUResult = 00000014 
+
+MEM/WB Write
+Control: = MemToReg = 1, RegWrite = 1
+LWB = 14, ALUResult = 00000014, WriteRegNum = 17 
+
+MEM/WB Read
+Control: = MemToReg = 1, RegWrite = 1
+LVDataValue = 02, ALUResult = 00000108, WriteRegNum = 24 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000207, 00000104, 00000105, 00000106, 0000020f 
+00000108, 0000020b, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000111, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000002, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle          11 
+
+IF/ID Write
+Inst = 00000000 
+
+IF/ID Read
+Inst = 00000000 
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1 
+
+ReadReg1Value = 00000000, ReadReg2Value = 00000000, SEOffset = 00000000
+WriteReg_20_16 =  0, WriteReg_15_11 =  0, Function = 00 
+
+ID/EX Read
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, RegWrite = 1 
+
+ReadReg1Value = 00000000, ReadReg2Value = 00000000, SEOffset = 00000000
+WriteReg_20_16 =  0, WriteReg_15_11 =  0, Function = 00 
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 00, WriteRegNum =  0, ALUResult = 00000000 
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 02, WriteRegNum =  8, ALUResult = 00000105 
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 1
+LWB = 14, ALUResult = 00000105, WriteRegNum =  8 
+
+MEM/WB Read
+Control: = MemToReg = 1, RegWrite = 1
+LVDataValue = 14, ALUResult = 00000014, WriteRegNum = 17 
+
+The Register Values are
+00000000, 00000101, 00000102, 00000207, 00000104, 00000105, 00000106, 0000020f 
+00000108, 0000020b, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f 
+00000110, 00000014, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117 
+00000002, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f 
+
+
+Clock Cycle          12
+
+IF/ID Write
+Inst = 00000000
+
+IF/ID Read
+Inst = 00000000
+
+ID/EX Write
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, regWrite = 1
+
+ReadReg1Value = 00000000, ReadReg2Value = 00000000, SEOffset = 00000000
+WriteReg_20_16 =  0, WriteReg_15_11 =  0, Function = 00
+
+ID/EX Read
+Control: RegDst = 1, ALUSrc = 0, ALUOp = 10, MemRead = 0, MemWrite = 0
+Branch = 0, MemToReg = 0, RegWrite = 1
+
+ReadReg1Value = 00000000, ReadReg2Value = 00000000, SEOffset = 00000000
+WriteReg_20_16 =  0, WriteReg_15_11 =  0, Function = 00
+
+EX/MEM Write
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 00, WriteRegNum =  0, ALUResult = 00000000
+
+EX/MEM Read
+Control: MemRead = 0, MemWrite = 0, Branch = 0, MemToReg = 0, RegWrite 1
+SWB = 00, WriteRegNum =  0, ALUResult = 00000000
+
+MEM/WB Write
+Control: = MemToReg = 0, RegWrite = 1
+LWB = 14, ALUResult = 00000000, WriteRegNum =  0
+
+MEM/WB Read
+Control: = MemToReg = 0, RegWrite = 1
+LVDataValue = 14, ALUResult = 00000105, WriteRegNum =  8
+
+The Register Values are
+00000000, 00000101, 00000102, 00000207, 00000104, 00000105, 00000106, 0000020f
+00000105, 0000020b, 00000004, 0000010b, 0000010c, 0000010d, 0000010e, 0000010f
+00000110, 00000014, 00000112, 00000113, 00000114, 00000115, 00000116, 00000117
+00000002, 00000119, 0000011a, 0000011b, 0000011c, 0000011d, 0000011e, 0000011f
