@@ -1,4 +1,4 @@
-The is the Readme file for a simplified version of the MIPS Pipelined Datapath  
+#MIPS Pipelined Datapath
 
 It implements R-Type and I-Type (loads and store) instructions  
 The lw and sw were simplified to lb and sb as per the specifications of the project  
