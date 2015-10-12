@@ -1,11 +1,12 @@
 #MIPS Pipelined Datapath
 
-It implements R-Type and I-Type (loads and store) instructions  
+Implements R-Type and I-Type (loads and store) instructions  
 The lw and sw were simplified to lb and sb as per the specifications of the project  
 (the b refers to a byte as opposed a word, w)  
 
-I later changed the lb and sb to lw, sw and added branching instructions  
-The pipelined datapath was also enhanced to handle data hazards with full forwarding  
+The lb and sb were later changed to lw, sw 
+Support for branching instructions was added  
+The pipelined datapath was modified to handle data hazards with full forwarding  
 The design was implemented on a Cyclone IV FPGA board using Quartus II  
 
 Test Program  
@@ -28,4 +29,4 @@ All Registers were set to 100 + register value
 
 Result  
 The program prints out the correct register state (regular and pipeline) of the program at every clock cycle  
-Those states have been saved in Output.txt   
+These states have been saved in Output.txt   
